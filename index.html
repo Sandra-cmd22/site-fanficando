@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <img class="logo" src="FANFICANDO.png">
+
+    <div class="top-left-button">
+        <button class="entrar-btn">Entrar</button>
+        <div class="language-dropdown-container">
+            <select id="languageDropdown" onchange="changeLanguage()">
+                <option value="pt-br">Português</option>
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <!-- Adicione mais opções conforme necessário -->
+            </select>
+        </div>
+    </div>
+
+    <div class="login-container">
+        <!-- Seu formulário de login aqui -->
+    </div>
+
+    <div class="login-container">
+        <h2>Iniciar sessão no Fanficando</h2>
+        <div class="social-login">
+            <button class="facebook-login" onclick="window.location.href='https://www.facebook.com/login.php/'"><i class="fab fa-facebook"></i> Iniciar sessão com Facebook</button>
+            <button class="google-login"  onclick="window.location.href='link-para-o-login-do-google'"><i class="fab fa-google"></i> Iniciar sessão com Google</button>
+        </div>
+        
+        <div class="separator">ou</div>
+        <button class="normal-login">Iniciar sessão</button>
+        <div class="link">
+            Esqueceu sua senha? <a href="pagina-de-recuperacao.html">Clique aqui</a> <br>
+         
+            Não tem conta? <a href="pagina-de-inscricao.html">Increva-se</a>
+      
+        </div>
+        
+    </div>
+
+
+
+
+
+
+    <script>
+        function changeLanguage() {
+            var languageDropdown = document.getElementById("languageDropdown");
+            var selectedLanguage = languageDropdown.value;
+
+            // Mapeamento de texto para cada idioma
+            var languageTexts = {
+                "pt-br": {
+                    "login-title": "Iniciar sessão no Fanficando",
+                    "forgot-password": "Esqueceu sua senha? ",
+                    "no-account": "Não tem conta? "
+                },
+                "en": {
+                    "login-title": "Log in to Fanficando",
+                    "forgot-password": "Forgot your password? ",
+                    "no-account": "Don't have an account? "
+                },
+                "es": {
+                    "login-title": "Iniciar sesión en Fanficando",
+                    "forgot-password": "¿Olvidó su contraseña? ",
+                    "no-account": "¿No tienes una cuenta? "
+                },
+                "fr": {
+                    "login-title": "Se connecter à Fanficando",
+                    "forgot-password": "Mot de passe oublié? ",
+                    "no-account": "Vous n'avez pas de compte? "
+                }
+                // Adicione mais idiomas conforme necessário
+            };
+
+            // Atualiza o texto de acordo com o idioma selecionado
+            Object.keys(languageTexts[selectedLanguage]).forEach(function(elementId) {
+                var element = document.getElementById(elementId);
+                if (element) {
+                    element.textContent = languageTexts[selectedLanguage][elementId];
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

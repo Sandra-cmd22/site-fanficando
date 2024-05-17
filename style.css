@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('Default_I_want_a_background_for_a_websites_wallpaper_with_scen_0\ \(2\).jpg');
+    background-size: cover; /* Faz a imagem cobrir toda a área do elemento */
+    background-position: center; /* Centraliza a imagem na página */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    overflow: hidden;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+    z-index: -1; /* Para garantir que a sobreposição fique atrás do conteúdo */
+}
+.logo{
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+/* Estilo para a sobreposição escura */
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor preta com 70% de opacidade */
+    z-index: -1; /* Para garantir que a sobreposição fique atrás do conteúdo */
+}
+
+/* Estilo para o container do formulário de login */
+.login-container {
+    position: absolute;
+    padding-top: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 432px;
+    height: 383px;
+    background-color: #000000; /* Cor preta */
+    opacity: 0.6; /* 70% de opacidade */
+    z-index: 1; /* Para garantir que fique sobre a sobreposição escura */
+}
+
+
+
+/* Estilo para os botões */
+button {
+   
+    display: block;
+    width: 294px ;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    cursor: pointer;
+    margin-left: 60px;
+  
+    
+}
+
+/* Estilo para o título */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: regular;
+    font-size: 18px;
+    color: #ffffff; /* Cor branca */
+}
+
+/* Estilo para os botões de login social */
+.facebook-login {
+    opacity: 1;
+    background-color: #2b59bc; /* Cor azul do Facebook */
+    color: #ffffff; /* Cor branca */
+    transition: background 0.3s ease;
+}
+
+.google-login {
+    opacity: 1;
+    background-color: #ffffff; /* Cor branca */
+    color: #000000; /* Cor preta */
+    transition: background 0.3s ease;
+}
+
+/* Estilo para o botão de login normal */
+.normal-login {
+    
+    background-color: #000000; /* Cor preta */
+    color: #ffffff; /* Cor branca */
+    border: 0.4px solid #ffffff;
+}
+
+/* Estilo para o separador */
+.separator {
+    text-align: center;
+    margin: 20px 0;
+    color: #bfbfbf; /* Cor branca */
+    font-weight: 100;
+
+}
+
+.social-login button i {
+    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: rgb(236, 113, 12); /* Change link color */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    text-decoration: underline;
+ 
+}
+
+
+.link{
+    color:#ffffff;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    padding-top: 5px;
+    text-align: center;
+}
+
+
+
+
+.top-left-button {
+    position: absolute; /* Posiciona o botão de forma absoluta */
+    top: 50px; /* Distância do topo da página */
+    right: 100px; /* Distância da esquerda da página */
+}
+
+.entrar-btn {
+    width: 135px; /* Largura do botão */
+    padding: 10px; /* Espaçamento interno do botão */
+    background: linear-gradient(45deg, #FA7C07, #CF1256); /* Gradiente de cores */
+    border: none; /* Remove borda */
+    border-radius: 20px; /* Arredonda os cantos */
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    transition: background 0.3s ease; /* Suave transição ao passar o mouse */
+}
+
+.entrar-btn:hover {
+    background: linear-gradient(45deg, #CF1256, #FA7C07); /* Inverte o gradiente ao passar o mouse */
+   
+}
+
+
+.language-dropdown-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Ajuste a margem conforme necessário */
+}
+
+/* Ajustes de layout para o botão de entrar e o dropdown de idiomas */
+.top-left-button {
+    display: flex;
+    align-items: center;
+}
+
+.entrar-btn {
+    margin-right: 50px; /* Ajuste a margem conforme necessário */
+}
+
+/* Estilo para o dropdown */
+#languageDropdown {
+    background-color: transparent; /* Remove o fundo branco */
+    color: white; /* Cor do texto */
+    border: 1px solid white; /* Adiciona uma borda branca */
+    padding: 5px; /* Ajusta o espaçamento interno */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+
+/* Estilo para as opções do dropdown */
+#languageDropdown option {
+    background-color: black; /* Define a cor de fundo para as opções */
+    color: white; /* Define a cor do texto das opções */
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* heiAdicione estilos específicos para dispositivos móveis aqui */
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('Default_I_want_a_background_for_a_websites_wallpaper_with_scen_0\ \(2\).jpg');
+        background-size: cover; /* Faz a imagem cobrir toda a área do elemento */
+        background-position: center; /* Centraliza a imagem na página */
+        background-repeat: no-repeat; /* Impede a repetição da imagem */
+        overflow: hidden;
+        height: 910px;
+    }
+    .entrar-btn {
+        width: 100px; /* Largura do botão */
+        height: 35px;
+       
+        text-align: center;
+        padding: 10px; /* Espaçamento interno do botão */
+        background: linear-gradient(45deg, #FA7C07, #CF1256); /* Gradiente de cores */
+        border: none; /* Remove borda */
+        border-radius: 20px; /* Arredonda os cantos */
+        color: white; /* Cor do texto */
+        font-size: 12px; /* Tamanho da fonte */
+        cursor: pointer; /* Muda o cursor ao passar o mouse */
+        transition: background 0.3s ease; /* Suave transição ao passar o mouse */
+    
+    }
+    
+    
+    .logo{
+        padding-left: 30px;
+        padding-top: 50px;
+        width: 160px;
+    }
+}
+
+/* Exemplo de estilos para imagens responsivas */
+
+
+
+
+@media only screen and (max-width: 768px) {
+  
+    .logo{
+        padding-left: 30px;
+        padding-top: 40px;
+        width: 120px;
+    }
+    .entrar-btn {
+        width: 80px; /* Largura do botão */
+        height: 35px;
+    
+        text-align: center;
+        padding: 10px; /* Espaçamento interno do botão */
+        background: linear-gradient(45deg, #FA7C07, #CF1256); /* Gradiente de cores */
+        border: none; /* Remove borda */
+        border-radius: 20px; /* Arredonda os cantos */
+        color: white; /* Cor do texto */
+        font-size: 12px; /* Tamanho da fonte */
+        cursor: pointer; /* Muda o cursor ao passar o mouse */
+        transition: background 0.3s ease; /* Suave transição ao passar o mouse */
+    
+    }
+   
+    .language-dropdown-container {
+        display: flex;
+        align-items: center;
+        margin-left: 65px; /* Ajuste a margem conforme necessário */
+        
+    }
+    .login-container {
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        padding-top: 30px;
+        padding-right: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 390px;
+        height: 383px;
+        background-color: #000000; /* Cor preta */
+        opacity: 0.6; /* 70% de opacidade */
+        z-index: 1; /* Para garantir que fique sobre a sobreposição escura */
+    }
+    
+}   
+   
+.top-left-button {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: -110px;
+    margin-top: -12px;
+    
+}
+#languageDropdown{
+    font-size: 8px;
+}
+   
+   
+    /* heiAdicione estilos específicos para dispositivos móveis aqui */
