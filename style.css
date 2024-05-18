@@ -1,22 +1,14 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('Default_I_want_a_background_for_a_websites_wallpaper_with_scen_0\ \(2\).jpg');
+    background-image: url('imagens/Default_I_want_a_background_for_a_websites_wallpaper_with_scen_0\ \(2\).jpg');
     background-size: cover; /* Faz a imagem cobrir toda a área do elemento */
     background-position: center; /* Centraliza a imagem na página */
     background-repeat: no-repeat; /* Impede a repetição da imagem */
     overflow: hidden;
+    height: 100vh;
 }
 
-.background-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
-    z-index: -1; /* Para garantir que a sobreposição fique atrás do conteúdo */
-}
 .logo{
     padding-left: 30px;
     padding-top: 50px;
@@ -29,7 +21,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Cor preta com 70% de opacidade */
+    background-color: rgba(0, 0, 0, 0.1); /* Cor preta com 70% de opacidade */
     z-index: -1; /* Para garantir que a sobreposição fique atrás do conteúdo */
 }
 
@@ -199,16 +191,7 @@ a {
         max-width: 100%;
         height: auto;
     }
-    body {
-        margin: 0;
-        padding: 0;
-        background-image: url('Default_I_want_a_background_for_a_websites_wallpaper_with_scen_0\ \(2\).jpg');
-        background-size: cover; /* Faz a imagem cobrir toda a área do elemento */
-        background-position: center; /* Centraliza a imagem na página */
-        background-repeat: no-repeat; /* Impede a repetição da imagem */
-        overflow: hidden;
-        height: 910px;
-    }
+    
     .entrar-btn {
         width: 100px; /* Largura do botão */
         height: 35px;
@@ -281,20 +264,27 @@ a {
         background-color: #000000; /* Cor preta */
         opacity: 0.6; /* 70% de opacidade */
         z-index: 1; /* Para garantir que fique sobre a sobreposição escura */
+
+
+
+
+
+
+    }   
+   
+    .top-left-button {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: -110px;
+        margin-top: -12px;
+        
+    }
+    #languageDropdown{
+        font-size: 8px;
+    }
+       
     }
     
-}   
-   
-.top-left-button {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right: -110px;
-    margin-top: -12px;
-    
-}
-#languageDropdown{
-    font-size: 8px;
-}
-   
+
    
     /* heiAdicione estilos específicos para dispositivos móveis aqui */

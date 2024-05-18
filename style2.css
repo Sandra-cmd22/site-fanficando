@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-image: url('imagens/Default_a_magical_library_with_dark_colors_1.jpg');
+ 
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f4511e;
+    padding-left: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+nav input[type="text"] {
+    padding: 5px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 351px;
+    background-color: black;
+    border: 1px solid #fff;
+    
+}
+
+nav a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    padding-right: 60px;
+    padding-left: 60px;
+  
+}
+
+.user-profile {
+    font-weight: bold;
+    color: #f4511e; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+}
+.user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    max-width: 200px;
+}
+
+aside img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.chapter-title {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+article {
+    flex: 3;
+    padding: 0 20px;
+}
+
+article h1 {
+    margin-top: 100px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid  #f4511e;
+    width: 587px;
+    padding-bottom: 10px;
+    margin-left: 290px;
+
+}
+
+article p {
+    line-height: 1.2;
+     width: 50%;
+     padding-left: 300px;
+     font-size: 18px;
+     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+     font-weight: 100;
+    
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-image: url('imagens/Default_a_magical_library_with_dark_colors_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    opacity: 0.9; 
+    height: 580px;
+
+}
+
+.butao {
+    background-color: #f4511e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 853px;
+}
+
+
+.capa{
+    width: 139px;
+    height: 218px;
+    padding-left: 100px;
+    padding-top: 200px;
+  
+
+}
+
+.chapter-title .dropdown {
+    position: relative;
+    display: inline-block;
+   
+}
+
+.dropdown-button {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 130px;
+    border-radius: 10px;
+  
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000; /* Fundo preto */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding-left: 120px;
+  
+}
+
+.dropdown-content a {
+    color: white; /* Texto branco */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+   
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+footer button {
+    background-color: #000; /* Fundo preto */
+    color: #fff;
+    border: 2px solid #fff; /* Borda branca */
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+footer button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.comments-section {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.comments-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comment-input input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-content {
+    flex: 1;
+}
+
+.comment-content strong {
+    display: block;
+
+}
+.comment-content p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+}
+.comment-content a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    padding-left: 10px;
+    color: #f4511e;
+}
